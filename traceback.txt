@@ -16,16 +16,12 @@ While running game code:
   File "game/screens.rpy", line 1286, in execute
     screen nvl(dialogue, items=None):
   File "game/screens.rpy", line 1288, in execute
-    window:
-  File "game/screens.rpy", line 1291, in execute
-    has vbox:
-  File "game/screens.rpy", line 1307, in execute
-    button:
-  File "game/screens.rpy", line 1307, in keywords
-    button:
-  File "game/screens.rpy", line 1308, in <module>
-    background white
-NameError: name 'white' is not defined
+    imagebutton:
+  File "game/screens.rpy", line 1288, in keywords
+    imagebutton:
+  File "game/screens.rpy", line 1293, in <module>
+    focus_mask Displayable
+NameError: name 'Displayable' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -66,18 +62,14 @@ Full traceback:
   File "game/screens.rpy", line 1286, in execute
     screen nvl(dialogue, items=None):
   File "game/screens.rpy", line 1288, in execute
-    window:
-  File "game/screens.rpy", line 1291, in execute
-    has vbox:
-  File "game/screens.rpy", line 1307, in execute
-    button:
-  File "game/screens.rpy", line 1307, in keywords
-    button:
-  File "game/screens.rpy", line 1308, in <module>
-    background white
-NameError: name 'white' is not defined
+    imagebutton:
+  File "game/screens.rpy", line 1288, in keywords
+    imagebutton:
+  File "game/screens.rpy", line 1293, in <module>
+    focus_mask Displayable
+NameError: name 'Displayable' is not defined
 
 macOS-10.16-x86_64-i386-64bit x86_64
 Ren'Py 8.0.0.22062402
 Oracle_Project_Mockup 1.0
-Sun Nov  5 20:03:51 2023
+Sun Nov  5 20:48:19 2023

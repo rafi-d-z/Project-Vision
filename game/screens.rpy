@@ -1284,7 +1284,14 @@ style notify_text:
 
 
 screen nvl(dialogue, items=None):
-
+    modal True
+    imagebutton:
+        idle Image("white.png")
+        style "button"
+        xalign 0.5
+        yalign 0.8
+        focus_mask True
+        action Return()
     window:
         style "nvl_window"
 
@@ -1304,13 +1311,6 @@ screen nvl(dialogue, items=None):
 
             use nvl_dialogue(dialogue)
 
-        button:
-            style "button"
-            xalign 0.5
-            yalign 0.8
-            xsize 200
-            ysize 100
-            action Return()
         ## Displays the menu, if given. The menu may be displayed incorrectly if
         ## config.narrator_menu is set to True.
         for i in items:

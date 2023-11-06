@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 1309: 'return' is not a keyword argument or valid child for the button statement.
-    action return()
-                 ^
+File "game/screens.rpy", line 1293: expected a keyword argument or end of line.
+    focus_mask = Displayable
+               ^
 
 Ren'Py Version: Ren'Py 8.0.0.22062402
-Sun Nov  5 20:03:44 2023
+Sun Nov  5 20:49:56 2023
