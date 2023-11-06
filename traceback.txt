@@ -1,59 +1,37 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 215, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 508, in script
-    python hide:
-  File "renpy/common/00start.rpy", line 215, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 508, in script
-    python hide:
-  File "renpy/common/00keymap.rpy", line 508, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 518, in _execute_python_hide
-    renpy.load("_reload-2")
-Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
+  File "game/script.rpy", line 9, in script
+    define you = Character(None, kind=avl)
+  File "game/script.rpy", line 9, in script
+    define you = Character(None, kind=avl)
+  File "game/script.rpy", line 9, in <module>
+    define you = Character(None, kind=avl)
+NameError: name 'avl' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/bootstrap.py", line 274, in bootstrap
     renpy.main.main()
-  File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/main.py", line 660, in main
-    run(restart)
-  File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/main.py", line 146, in run
-    renpy.execution.run_context(True)
-  File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/execution.py", line 938, in run_context
-    context.run()
-  File "renpy/common/00start.rpy", line 215, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 508, in script
-    python hide:
+  File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/main.py", line 558, in main
+    renpy.game.context().run(node)
+  File "game/script.rpy", line 9, in script
+    define you = Character(None, kind=avl)
   File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
-  File "renpy/common/00start.rpy", line 215, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 508, in script
-    python hide:
-  File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/ast.py", line 1111, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/python.py", line 1049, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00keymap.rpy", line 508, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 518, in _execute_python_hide
-    renpy.load("_reload-2")
-  File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/loadsave.py", line 769, in load
-    log.unfreeze(roots, label="_after_load")
-  File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/rollback.py", line 1078, in unfreeze
-    self.rollback(0, force=True, label=label, greedy=greedy, on_load=True)
-  File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/rollback.py", line 889, in rollback
-    self.load_failed()
-  File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/rollback.py", line 807, in load_failed
-    raise Exception("Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?")
-Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
+  File "game/script.rpy", line 9, in script
+    define you = Character(None, kind=avl)
+  File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/ast.py", line 2421, in execute
+    self.set()
+  File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/ast.py", line 2435, in set
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/python.py", line 1073, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 9, in <module>
+    define you = Character(None, kind=avl)
+NameError: name 'avl' is not defined
 
 macOS-10.16-x86_64-i386-64bit x86_64
 Ren'Py 8.0.0.22062402
 Project Vision 
-Mon Nov  6 17:53:40 2023
+Mon Nov  6 18:35:38 2023
