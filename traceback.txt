@@ -1,75 +1,37 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 42, in script
-    "You see a vision of a bright blue sky and the sun shining, clear as day, in the sky."
-  File "game/script.rpy", line 42, in script
-    "You see a vision of a bright blue sky and the sun shining, clear as day, in the sky."
-  File "renpy/common/00nvl_mode.rpy", line 377, in do_display
-    renpy.display_say(
-  File "renpy/common/00nvl_mode.rpy", line 207, in nvl_show_core
-    return __nvl_show_screen("nvl", items=[ ])
-  File "renpy/common/00nvl_mode.rpy", line 201, in _m1_00nvl_mode__nvl_show_screen
-    return renpy.get_widget(screen_name, "what", config.nvl_layer)
-  File "game/screens.rpy", line 1286, in execute
-    screen nvl(dialogue, items=None):
-  File "game/screens.rpy", line 1286, in execute
-    screen nvl(dialogue, items=None):
-  File "game/screens.rpy", line 1288, in execute
-    imagebutton:
-  File "game/screens.rpy", line 1288, in keywords
-    imagebutton:
-  File "game/screens.rpy", line 1293, in <module>
-    focus_mask Displayable
-NameError: name 'Displayable' is not defined
+  File "game/script.rpy", line 9, in script
+    define you = Character(None, kind=avl)
+  File "game/script.rpy", line 9, in script
+    define you = Character(None, kind=avl)
+  File "game/script.rpy", line 9, in <module>
+    define you = Character(None, kind=avl)
+NameError: name 'avl' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/bootstrap.py", line 274, in bootstrap
     renpy.main.main()
-  File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/main.py", line 660, in main
-    run(restart)
-  File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/main.py", line 146, in run
-    renpy.execution.run_context(True)
-  File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/execution.py", line 938, in run_context
-    context.run()
-  File "game/script.rpy", line 42, in script
-    "You see a vision of a bright blue sky and the sun shining, clear as day, in the sky."
+  File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/main.py", line 558, in main
+    renpy.game.context().run(node)
+  File "game/script.rpy", line 9, in script
+    define you = Character(None, kind=avl)
   File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
-  File "game/script.rpy", line 42, in script
-    "You see a vision of a bright blue sky and the sun shining, clear as day, in the sky."
-  File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/ast.py", line 901, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/exports.py", line 1373, in say
-    who(what, *args, **kwargs)
-  File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/character.py", line 1253, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "renpy/common/00nvl_mode.rpy", line 377, in do_display
-    renpy.display_say(
-  File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/character.py", line 603, in display_say
-    what_text = show_function(who, what_string)
-  File "renpy/common/00nvl_mode.rpy", line 207, in nvl_show_core
-    return __nvl_show_screen("nvl", items=[ ])
-  File "renpy/common/00nvl_mode.rpy", line 201, in _m1_00nvl_mode__nvl_show_screen
-    return renpy.get_widget(screen_name, "what", config.nvl_layer)
-  File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/display/screen.py", line 1386, in get_displayable
-    screen.update()
-  File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/display/screen.py", line 653, in update
-    self.screen.function(**self.scope)
-  File "game/screens.rpy", line 1286, in execute
-    screen nvl(dialogue, items=None):
-  File "game/screens.rpy", line 1286, in execute
-    screen nvl(dialogue, items=None):
-  File "game/screens.rpy", line 1288, in execute
-    imagebutton:
-  File "game/screens.rpy", line 1288, in keywords
-    imagebutton:
-  File "game/screens.rpy", line 1293, in <module>
-    focus_mask Displayable
-NameError: name 'Displayable' is not defined
+  File "game/script.rpy", line 9, in script
+    define you = Character(None, kind=avl)
+  File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/ast.py", line 2421, in execute
+    self.set()
+  File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/ast.py", line 2435, in set
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "/Users/roseyang/Downloads/renpy-8.0.0-sdk/renpy/python.py", line 1073, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 9, in <module>
+    define you = Character(None, kind=avl)
+NameError: name 'avl' is not defined
 
 macOS-10.16-x86_64-i386-64bit x86_64
 Ren'Py 8.0.0.22062402
-Oracle_Project_Mockup 1.0
-Sun Nov  5 20:48:19 2023
+Project Vision 
+Mon Nov  6 18:35:38 2023
