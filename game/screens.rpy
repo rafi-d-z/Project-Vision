@@ -1284,14 +1284,14 @@ style notify_text:
 
 
 screen nvl(dialogue, items=None):
-    modal True
-    imagebutton:
-        idle Image("white.png")
-        style "button"
-        xalign 0.5
-        yalign 0.8
-        focus_mask True
-        action Return()
+    # modal True
+    # imagebutton:
+    #     idle Image("white.png")
+    #     style "button"
+    #     xalign 0.5
+    #     yalign 0.8
+    #     focus_mask True
+    #     action Return()
     window:
         style "nvl_window"
 

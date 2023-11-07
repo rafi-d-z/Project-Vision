@@ -6,6 +6,7 @@ label test_event1:
             $ scenes.append("test_event1_followup1")
         "You might want to reschedule.":
             $ scenes.append("test_event1_followup2")
+    nvl clear
     jump home
 
 
