@@ -9,10 +9,13 @@ init python:
 define you = Character(None, kind=adv)
 define you2 = Character("You, the Court Oracle")
 define town = Character("Townsperson")
+define defense = Character("Minister of Defense")
 define narrator = nvl_narrator
+
 default day_num = 0
 default event_num = 0
-default scenes = ["test_event1", "test_event2"]
+
+default scenes = ["test_event1", "test_event2","dilemma_1"]
 
 # The game starts here.
 
@@ -36,7 +39,7 @@ label start:
 
     you2 "My king! I have foreseen a terrible event! It seems that you will die soon! And in battle!"
 
-    jump home
+    jump dilemma_1
 
 label home:
     scene main bg curtains up with fade
