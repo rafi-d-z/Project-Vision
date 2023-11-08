@@ -10,6 +10,7 @@ define you = Character(None, kind=adv)
 define you2 = Character("You, the Court Oracle")
 define town = Character("Townsperson")
 define defense = Character("Minister of Defense")
+define king = Character("The King")
 define narrator = nvl_narrator
 
 default day_num = 0
