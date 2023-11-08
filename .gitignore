@@ -5,9 +5,9 @@ errors.txt
 log.txt
 traceback.txt
 
-events.rpyc
-gui.rpyc
-options.rpyc
-screens.rpyc
-script.rpyc
+
+game/gui.rpyc
+game/options.rpyc
+game/screens.rpyc
+game/script.rpyc
 game/dilemma_1.rpyc
