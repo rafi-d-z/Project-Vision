@@ -2,10 +2,12 @@ label dilemma_1:
     defense "Your majesty, I believe that it would be wise to focus our defenses, but unfortunately, with our limited resources, we can either increase security for the king or the citizens. You are the wisest member of the court, which action do you believe would be best for the kingdom?"
     menu:
         "Increase security for the king":
-            $ scenes.append(".choice1")
+            $ scenes.append("choice1")
             $ event_num += 1
+            jump .choice1
         "Increase security for the citizens":
-            $ scenes.append(".choice2")
+            $ scenes.append("choice2")
+            jump .choice2
     nvl clear
 
 label .choice1:
@@ -19,5 +21,4 @@ label .choice2:
 label .end_of_day:
     scene main bg curtains down with fade
     you "As the daylight fades, you close the curtains to your tent, and fall into a restless sleep, dreams plagued by visions of calamity to come."
-
-    
+    jump dilemma_2
