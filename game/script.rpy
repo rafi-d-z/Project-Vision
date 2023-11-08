@@ -7,6 +7,7 @@ init python:
 # name of the character.
 
 define you = Character(None, kind=adv)
+define you2 = Character("You, the Court Oracle")
 define town = Character("Townsperson")
 define narrator = nvl_narrator
 default day_num = 0
@@ -29,7 +30,12 @@ label start:
 
     # These display lines of dialogue.
 
-    you "You are an oracle. You have foreseen a great calamity that will befall your town. Help the townspeople escape the devastation."
+    you "You are the court oracle. One day, you look into to your crystal ball, and are surprised at what you see."
+
+    you "You see the king wounded in battle, on his last breath. You have no idea how things have come to this, but it is important that you take a course of action."
+
+    you2 "My king! I have foreseen a terrible event! It seems that you will die soon! And in battle!"
+
     jump home
 
 label home:

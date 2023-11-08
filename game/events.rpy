@@ -21,3 +21,21 @@ label test_event1_followup2:
 label test_event2:
     town "test_event2."
     jump home
+
+label dilemma_1:
+    defense "Your majesty, I believe that it would be wise to focus our defenses, but unfortunately, with our limited resources, we can either increase security for the king or the citizens. You are the wisest member of the court, which action do you believe would be best for the kingdom?"
+    menu:
+        "Increase security for the king":
+            $ scenes.append("dilemma_1_1")
+        "Increase security for the citizens":
+            $ scenes.append("dilemma_1_2")
+
+label dilemma_1_1:
+    defense "We have increased security for the king. There are more soldiers around the king's palace."
+    jump home
+
+label dilemma_1_2:
+    defense "We have increased security for the citizens. There are undercover soldiers around the neighborhoods."
+    jump home
+
+    
