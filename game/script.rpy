@@ -13,7 +13,7 @@ define defense = Character("Minister of Defense")
 define narrator = nvl_narrator
 
 default day_num = 0
-default event_num = 0
+default event_num = 0 # we declare this number as an accumulator of "bad" vs "good" choices. Good choices > 3, bad choices <=3
 
 
 default scenes = ["dilemma_1"]
