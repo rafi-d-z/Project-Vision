@@ -4,3 +4,9 @@ game/cache
 errors.txt
 log.txt
 traceback.txt
+
+events.rpyc
+gui.rpyc
+options.rpyc
+screens.rpyc
+script.rpyc
