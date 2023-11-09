@@ -1,4 +1,5 @@
 label dilemma_1:
+    $ day_num = 2
     show king_beard_down at right
     pause 0.2
     hide king_beard_down
@@ -12,19 +13,17 @@ label dilemma_1:
     defense "Each choice has its merits, but I'd like to hear your thoughts."
     menu:
         "Strengthen the king's personal guard":
-            $ event_num++
+            $ event_num += 1
             jump .choice1
         "Strengthen the city watch":
-            $ event_num--
+            $ event_num -= 1
             jump .choice2
     nvl clear
 
 label .choice1:
     defense "We will strengthen the king's guard. None will threaten the face of our country."
-    day_num++;
     jump end_of_day
 
 label .choice2:
-    defense "We will strengthen the city watch. We'll make sure nobody slips our defences".
-    day_num++;
+    defense "We will strengthen the city watch. We'll make sure nobody slips our defenses."
     jump end_of_day
