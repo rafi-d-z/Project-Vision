@@ -6,29 +6,18 @@ label dilemma_2:
     "\"We will have victory! In the name of our lord!\" he shouts. The crowd echoes his chant, screaming and shouting in jubilation."
     nvl clear
     you "You rush to tell your king the news."
-    show king_beard_down at right
-    pause 0.2
-    hide king_beard_down
-    show king_beard_up at right
-    pause 0.2
-    hide king_beard_up
-    show king_beard_down at right
+    show king_sprite at right
     king "Rogue armies amassing at our doorstep? Worrying indeed."
     king "This is troubling. If what you say is true, I may not be long for the world."
     king "We must secure the borders, yes? Stop anyone from going in and out of our country."
-    hide king_beard_down
+    hide king_sprite
+    show defense_sprite at right
     defense "But sire, what about traders? Our people need trade to survive. If we close the borders, they'll starve!"
-    show king_beard_down at right
-    pause 0.2
-    hide king_beard_down
-    show king_beard_up at right
-    pause 0.2
-    hide king_beard_up
-    show king_beard_down at right
+    hide defense_sprite
+    show king_sprite at right
     king "It will be risky, yes. But some risks are necessary for the safety of our nation, and its leader."
     king "What do you think?"
     hide king_beard_down
-
 
     menu:
         "Secure the borders":
@@ -40,25 +29,13 @@ label dilemma_2:
             jump .choice2
 
 label .choice1:
-    show king_beard_down at right
-    pause 0.2
-    hide king_beard_down
-    show king_beard_up at right
-    pause 0.2
-    hide king_beard_up
-    show king_beard_down at right
+    show king_sprite at right
     king "You're right. We must make sacrifices for the safety of the nation. The people will have to make do for a time."
-    hide king_beard_down
+    hide king_sprite
     jump end_of_day
 
 label .choice2:
-    show king_beard_down at right
-    pause 0.2
-    hide king_beard_down
-    show king_beard_up at right
-    pause 0.2
-    hide king_beard_up
-    show king_beard_down at right
+    show king_sprite at right
     king "You're right. We cannot sacrifice the people for the sake of cowardice. We must keep the lifeline of our people alive."
-    hide king_beard_down
+    hide king_sprite
     jump end_of_day

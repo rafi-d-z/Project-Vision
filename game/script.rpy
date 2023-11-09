@@ -3,6 +3,20 @@
 init python:
     import random
 
+image king_sprite:
+    "king_beard_down.png"
+    0.2
+    "king_beard_up.png"
+    0.2
+    repeat
+
+image defense_sprite:
+    "knight_mask_down.png"
+    0.2
+    "knight_mask_up.png"
+    0.2
+    repeat
+
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
