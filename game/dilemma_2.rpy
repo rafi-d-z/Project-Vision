@@ -1,41 +1,39 @@
 label dilemma_2:
-    you "the next day"
-    king """
-        Greetings, it seems that there are rogue armies that are suspiciously close to our nation.
+    you "The sun rises, and you peer into your crystal ball, anxiously awaiting more information on the coming battle."
+    "You see a swarm of people, soldiers, milling about in some kind of army camp. You aren't sure who they are, until you recognize the insignia on one of their battle flags."
+    "It's the seal of a neighboring country, and from what you can tell, they're preparing for war. A man wearing bulky, intricate armor and wielding a massive greatsword steps onto a makeshift stage."
+    "\"We will have victory! In the name of our lord!\" he shouts. The crowd echoes his chant, screaming and shouting in jubilation."
+    you "You rush to tell your king the news."
+    show king_beard_down at right
+    pause 0.2
+    hide king_beard_down
+    show king_beard_up at right
+    pause 0.2
+    hide king_beard_up
+    show king_beard_down at right
+    king "Rogue armies amassing at our doorstep? Worrying indeed."
+    king "This is troubling. If what you say is true, I may not be long for the world."
+    king "We must secure the borders, yes? Stop anyone from going in and out of our country."
+    defense "But sire, what about traders? Our people need trade to survive. If we close the borders, they'll starve!"
+    king "It will be risky, yes. But some risks are necessary for the safety of our nation, and its leader."
+    king "What do you think?"
 
-        If what you have said is true, then I fear that this may be a threat to my life.
-
-        The intuitive course of action would be for me to close the gates... but that is our only way in and out of the walls.
-
-        This would mean that our trade routes would be blocked, and any income of food would be stagnant...
-
-        Who knows how long they'll be there for. However, the longer this gate stays closed, the higher the risk there is for my people to starve...
-
-        I don't know if I can take the risk though.. I can't die just yet... I've yet to see my beautiful daughter get married- I live before that.
-
-        This is quite difficult..
-
-        """
+    hide king_beard_down
 
     menu:
-        "Close the gate":
-            $ scenes.append("choice1")
-            $ event_num += 1
+        "Secure the borders":
+            $ event_num++
             jump .choice1
 
-        "Leave the gate open":
-            $ scenes.append("choice2")
+        "Keep the borders open":
+            $ event_num--
             jump .choice2
     nvl clear
 
 label .choice1:
-    king "You're right. The safety of myself comes before the people. Without me, there is no nation."
-    jump .end_of_day
+    king "You're right. We must make sacrifices for the safety of the nation. The people will have to make do for a time."
+    jump end_of_day
 
 label .choice2:
-    king "You're right. The safety of the people come before me. Without the people, there is no nation."
-    jump .end_of_day
-
-label .end_of_day:
-    scene main bg curtains down with fade
-    you "As the daylight fades, you close the curtains to your tent, and fall into a restless sleep, dreams plagued by visions of calamity to come."
+    king "You're right. We cannot sacrifice the people for the sake of cowardice. We must keep the lifeline of our people alive."
+    jump end_of_day

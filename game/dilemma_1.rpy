@@ -1,24 +1,30 @@
 label dilemma_1:
-    defense "Your majesty, I believe that it would be wise to focus our defenses, but unfortunately, with our limited resources, we can either increase security for the king or the citizens. You are the wisest member of the court, which action do you believe would be best for the kingdom?"
+    show king_beard_down at right
+    pause 0.2
+    hide king_beard_down
+    show king_beard_up at right
+    pause 0.2
+    hide king_beard_up
+    show king_beard_down at right
+    king "There is a battle on the horizon? Dire news indeed. Captain, what do you recommend?"
+    hide king_beard_down
+    defense "It would be wise to ready our defenses, but we only have so many guards. We can bolster your personal guard, or we can fortify the perimeter of the city."
+    defense "Each choice has its merits, but I'd like to hear your thoughts."
     menu:
-        "Increase security for the king":
-            $ scenes.append("choice1")
-            $ event_num += 1
+        "Strengthen the king's personal guard":
+            $ event_num++
             jump .choice1
-        "Increase security for the citizens":
-            $ scenes.append("choice2")
+        "Strengthen the city watch":
+            $ event_num--
             jump .choice2
     nvl clear
 
 label .choice1:
-    defense "We have increased security for the king. There are more soldiers around the king's palace."
-    jump .end_of_day
+    defense "We will strengthen the king's guard. None will threaten the face of our country."
+    day_num++;
+    jump end_of_day
 
 label .choice2:
-    defense "We have increased security for the citizens. There are undercover soldiers around the neighborhoods."
-    jump .end_of_day
-
-label .end_of_day:
-    scene main bg curtains down with fade
-    you "As the daylight fades, you close the curtains to your tent, and fall into a restless sleep, dreams plagued by visions of calamity to come."
-    jump dilemma_2
+    defense "We will strengthen the city watch. We'll make sure nobody slips our defences".
+    day_num++;
+    jump end_of_day

@@ -13,34 +13,28 @@ define defense = Character("Minister of Defense")
 define king = Character("The King")
 define narrator = nvl_narrator
 
-default day_num = 0
+default day_num = 1
 default event_num = 0 # we declare this number as an accumulator of "bad" vs "good" choices. Good choices > 3, bad choices <=3
-
-
-default scenes = ["dilemma_1"]
 
 # The game starts here.
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
     scene main bg curtains up
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
 
     # These display lines of dialogue.
 
-    you "You are the court oracle. One day, you look into to your crystal ball, and are surprised at what you see."
-
-    you "You see the king wounded in battle, on his last breath. You have no idea how things have come to this, but it is important that you take a course of action."
-
-    you2 "My king! I have foreseen a terrible event! It seems that you will die soon! And in battle!"
+    "You're presented with a dreadful sight. Your king lays before you, in a pool of his own blood."
+    "A spear is lodged deep within his chest, and amidst the chaos and fighting, you see him sputter and cough before finally falling still."
+    you "The crystal ball dims, and the vision ends. You dash out of your tent to break the news to the king."
+    you2 "My liege! I bring dire news. I've received a dreadful vision, that you will fall in battle, and soon."
 
     jump dilemma_1
+
+label end_of_day:
+    scene main bg curtains down with fade
+    you "As the daylight fades, you close the curtains to your tent, and fall into a restless sleep, dreams plagued by visions of calamity to come."
+    scene main bg curtains up with fade
+    jump expression ("dilemma_" + day_num)
 
 return
