@@ -17,7 +17,7 @@ label dilemma_2:
     show king_sprite at right
     king "It will be risky, yes. But some risks are necessary for the safety of our nation, and its leader."
     king "What do you think?"
-    hide king_beard_down
+    hide king_sprite
 
     menu:
         "Secure the borders":
