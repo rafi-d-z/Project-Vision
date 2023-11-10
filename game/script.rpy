@@ -114,7 +114,7 @@ label start:
     pause 1.35
     hide oracle_vision2
     show oracle_idle at left
-    you "The crystal ball dims, and the vision ends. You dash out of your tent to break the news to the king."
+    you "The crystal ball rests, and the vision ends. You dash out of your tent to break the news to the king."
     you2 "I bring grim tidings. I've received a dreadful vision, that you will fall in battle, and soon."
     jump dilemma_1
 

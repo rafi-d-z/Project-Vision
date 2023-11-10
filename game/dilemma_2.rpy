@@ -3,7 +3,7 @@ label dilemma_2:
     you "The sun rises, and you peer into your crystal ball, anxiously awaiting more information on the coming battle."
     hide oracle_idle
     show oracle_vision1 at left
-    pause 1.35
+    pause 1.7
     hide oracle_vision1
     scene vision_background with dissolve
     pause 0.5

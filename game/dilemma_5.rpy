@@ -2,7 +2,7 @@ label dilemma_5:
     you "The sun rises, and you peer into your crystal ball, anxiously awaiting more information on the coming battle."
     hide oracle_idle
     show oracle_vision1 at left
-    pause 1.35
+    pause 1.7
     hide oracle_vision1
     scene vision_background with dissolve
     pause 0.5
@@ -32,11 +32,11 @@ label dilemma_5:
 
     menu:
         "Evacuate the people":
-            $ event_num += 2
+            $ event_num -= 2
             jump .choice1
 
         "Let the townspeople fend for themselves":
-            $ event_num -= 5
+            $ event_num += 5
             jump .choice2
 
 label .choice1:
