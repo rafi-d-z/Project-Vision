@@ -1,9 +1,11 @@
 label dilemma_4:
     $ day_num = 5
     you "The sun rises, and you peer into your crystal ball, anxiously awaiting more information on the coming battle."
+    scene vision_background with dissolve
     "You see guards and soldiers in the courtyard, and though they aren't on-duty, tensions still seem high. A harsh word between two men turns into a shouting match."
     "Soon, the first punch is thrown, and before long there's a brawl in the courtyard."
     nvl clear
+    scene main bg curtains up with dissolve
     you "You rush to tell your king the news."
     show king_sprite at right
     king "Low morale in the army is unacceptable when there's an enemy army on the horizon."

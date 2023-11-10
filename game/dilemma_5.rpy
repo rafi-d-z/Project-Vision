@@ -1,8 +1,10 @@
 label dilemma_5:
     you "The sun rises, and you peer into your crystal ball, anxiously awaiting more information on the coming battle."
+    scene vision_background with dissolve
     "You see the enemy army charging through the gates, cutting down townspeople along their way. Screams ring out, echoing off the stone walls of the city."
     "Desperate people claw at the gates of the castle, but it remains firmly shut, and corpses pile up against the gate as the marauders cut them down."
     nvl clear
+    scene main bg curtains up with dissolve
     you "You rush to tell your king the news."
     show king_sprite at right
     king "Right. When the enemy arrives, we cannot afford to defend the entire perimeter of the city. Our generals recommended fortifying the castle gates instead."

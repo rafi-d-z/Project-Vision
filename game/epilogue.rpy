@@ -1,4 +1,5 @@
 label epilogue:
+    scene pixel_castle with dissolve
     if event_num > 0:
         you "As the enemy army crests the horizon, the king joins his army at the gates. \"Our kingodm will never fall!\", he shouts."
         you "The soldiers cheer, and ready their weapons as the enemy army charges in. Screams and shouts ring out from both sides as blows are traded."
