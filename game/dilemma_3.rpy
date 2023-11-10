@@ -2,6 +2,7 @@ label dilemma_3:
     $ day_num = 4
     you "The sun rises, and you peer into your crystal ball, anxiously awaiting more information on the coming battle."
     scene vision_background with dissolve
+    pause 0.5
     "You see a shady-looking individual flitting about the city streets, and beneath their cloak you catch a flash of steel."
     "As they make their way towards the castle, you see them crouch into the shadows, and they vanish."
     nvl clear

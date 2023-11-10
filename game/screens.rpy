@@ -1284,14 +1284,6 @@ style notify_text:
 
 
 screen nvl(dialogue, items=None):
-    # modal True
-    # imagebutton:
-    #     idle Image("white.png")
-    #     style "button"
-    #     xalign 0.5
-    #     yalign 0.8
-    #     focus_mask True
-    #     action Return()
     window:
         style "nvl_window"
 
@@ -1338,6 +1330,7 @@ screen nvl_dialogue(dialogue):
                         id d.who_id
 
                 text d.what:
+                    color "#330055"
                     id d.what_id
 
 
@@ -1358,7 +1351,6 @@ style nvl_window:
     xfill True
     yfill True
 
-    background "gui/nvl.png"
     padding gui.nvl_borders.padding
 
 style nvl_entry:

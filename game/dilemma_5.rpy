@@ -1,6 +1,7 @@
 label dilemma_5:
     you "The sun rises, and you peer into your crystal ball, anxiously awaiting more information on the coming battle."
     scene vision_background with dissolve
+    pause 0.5
     "You see the enemy army charging through the gates, cutting down townspeople along their way. Screams ring out, echoing off the stone walls of the city."
     "Desperate people claw at the gates of the castle, but it remains firmly shut, and corpses pile up against the gate as the marauders cut them down."
     nvl clear

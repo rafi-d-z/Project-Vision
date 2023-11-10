@@ -2,6 +2,7 @@ label dilemma_2:
     $ day_num = 3
     you "The sun rises, and you peer into your crystal ball, anxiously awaiting more information on the coming battle."
     scene vision_background with dissolve
+    pause 0.5
     "You see a swarm of people, soldiers, milling about in some kind of army camp. You aren't sure who they are, until you recognize the insignia on one of their battle flags."
     "It's the seal of a neighboring country, and from what you can tell, they're preparing for war. A man wearing bulky, intricate armor and wielding a massive greatsword steps onto a makeshift stage."
     "\"We will have victory! In the name of our lord!\" he shouts. The crowd echoes his chant, screaming and shouting in jubilation."

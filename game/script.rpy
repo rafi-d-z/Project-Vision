@@ -35,6 +35,7 @@ default event_num = 0 # we declare this number as an accumulator of "bad" vs "go
 label start:
 
     scene vision_background
+    pause 0.5
     "You're presented with a dreadful sight. Your king lays before you, in a pool of his own blood."
     "A spear is lodged deep within his chest, and amidst the chaos and fighting, you see him sputter and cough before finally falling still."
     nvl clear

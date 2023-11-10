@@ -2,6 +2,7 @@ label dilemma_4:
     $ day_num = 5
     you "The sun rises, and you peer into your crystal ball, anxiously awaiting more information on the coming battle."
     scene vision_background with dissolve
+    pause 0.5
     "You see guards and soldiers in the courtyard, and though they aren't on-duty, tensions still seem high. A harsh word between two men turns into a shouting match."
     "Soon, the first punch is thrown, and before long there's a brawl in the courtyard."
     nvl clear
