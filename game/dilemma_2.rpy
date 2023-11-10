@@ -1,6 +1,10 @@
 label dilemma_2:
     $ day_num = 3
     you "The sun rises, and you peer into your crystal ball, anxiously awaiting more information on the coming battle."
+    hide oracle_idle
+    show oracle_vision1 at left
+    pause 1.35
+    hide oracle_vision1
     scene vision_background with dissolve
     pause 0.5
     "You see a swarm of people, soldiers, milling about in some kind of army camp. You aren't sure who they are, until you recognize the insignia on one of their battle flags."
@@ -8,6 +12,10 @@ label dilemma_2:
     "\"We will have victory! In the name of our lord!\" he shouts. The crowd echoes his chant, screaming and shouting in jubilation."
     nvl clear
     scene main bg curtains up with dissolve
+    show oracle_vision2 at left
+    pause 1.35
+    hide oracle_vision2
+    show oracle_idle at left
     you "You rush to tell your king the news."
     show king_sprite at right
     king "Rogue armies amassing at our doorstep? Worrying indeed."
@@ -21,6 +29,7 @@ label dilemma_2:
     king "It will be risky, yes. But some risks are necessary for the safety of our nation, and its leader."
     king "What do you think?"
     hide king_sprite
+    hide oracle_idle
 
     menu:
         "Secure the borders":
@@ -32,12 +41,14 @@ label dilemma_2:
             jump .choice2
 
 label .choice1:
+    show oracle_idle at left
     show king_sprite at right
     king "You're right. We must make sacrifices for the safety of the nation. The people will have to make do for a time."
     hide king_sprite
     jump end_of_day
 
 label .choice2:
+    show oracle_idle at left
     show king_sprite at right
     king "You're right. We cannot sacrifice the people for the sake of cowardice. We must keep the lifeline of our people alive."
     hide king_sprite
