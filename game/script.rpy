@@ -103,18 +103,20 @@ default event_num = 0 # we declare this number as an accumulator of "bad" vs "go
 # The game starts here.
 
 label start:
-
     scene vision_background
+    play music "audio/Crystal_ball_music.wav"
     pause 0.5
     "You're presented with a dreadful sight. Your king lays before you, in a pool of his own blood."
     "A spear is lodged deep within his chest, and amidst the chaos and fighting, you see him sputter and cough before finally falling still."
     nvl clear
+    play music "audio/Oracles_-_Main_Theme_Loop.wav"
     scene main bg curtains up with dissolve
     show oracle_vision2 at left
     pause 1.35
     hide oracle_vision2
     show oracle_idle at left
     you "The crystal ball rests, and the vision ends. You dash out of your tent to break the news to the king."
+    play voice "audio/Oracle_voice.wav"
     you2 "I bring grim tidings. I've received a dreadful vision, that you will fall in battle, and soon."
     jump dilemma_1
 
